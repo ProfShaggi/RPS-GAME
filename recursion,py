@@ -1,0 +1,37 @@
+# Recursion (When a function calls itself)
+
+# def add_one(item):
+#     if item >= 9:
+#         return item + 1
+#     total= item + 1
+#     print(total)
+
+#     return add_one(total)
+# add_one(0)
+
+# Create a loop that performs recursion operations
+# import sys #(To exit the program)
+# def loop_recursion(value):
+#     while value <= 10:
+#         print(value)
+#         value += 1
+# loop_recursion(1)
+# sys.exit("The end of loop")
+
+def parent_function(value):
+    game_count= 0
+    
+    def count_game():
+            nonlocal game_count
+            game_count += 1
+            if value == value:
+                print("Number count:" + str(value))
+                print("Game count:" + str(game_count))
+    return count_game
+result= parent_function(1)
+result()
+result()
+result()
+
+        
+
